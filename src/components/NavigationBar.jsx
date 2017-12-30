@@ -8,7 +8,7 @@ class NavigationBar extends Component {
             <Navbar inverse collapseOnSelect fixedTop>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="#">Tuning Catalog</a>
+                        <a href="/">Tuning Catalog</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
