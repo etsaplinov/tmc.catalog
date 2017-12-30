@@ -5,12 +5,13 @@ import * as actionCreators from '../modules/categories/actions/categories';
 class CategoriesList extends Component {
     componentDidMount() {
         setTimeout(this.props.fetchCategories, 1500);
+        setTimeout(this.props.fetchCategoriesComplete, 2000);
     }
 
     render() {
         return (
             <div>
-                {this.props.fetch_status === "fetching" ? <h3>Loading</h3> : <h3>Categories</h3>}
+                {this.props.fetch_status == "fetching" ? <div className="loading"><div></div></div> : <h3>Categories</h3>}
             </div>
         );
     }
@@ -18,7 +19,7 @@ class CategoriesList extends Component {
 
 function mapStateToProps(state) {
     return {
-        status: state.default.categories.status,
+        fetch_status: state.default.categories.fetch_status,
         categories: state.default.categories.items
     }
 }
