@@ -16,11 +16,10 @@ let reducer = combineReducers(reducers);
 let store = createStore(reducer)
 
 
-ReactDOM.render(
-    <Provider store={store}>
+ReactDOM.render( 
+    <Provider store = { store } >
         <BrowserRouter>
             <App />
         </BrowserRouter>
-    </Provider>
-    , document.getElementById('root'));
+    </Provider>, document.getElementById('root'));
 registerServiceWorker();
