@@ -5,7 +5,7 @@ import { Route} from 'react-router-dom';
 import Home from './routes/Home';
 import Cars from './routes/Cars';
 import Categories from './routes/Categories';
-import Layout from './containers/Layout';
+// import Layout from './containers/Layout';
 
 const Routes = props => {
   return (

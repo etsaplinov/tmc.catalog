@@ -10,7 +10,7 @@ const reducer = (state = { fetch_status: 'empty', items: [] }, action) => {
         case FETCH_CATEGORIES_COMPLETED:
             return Object.assign({}, {
                 fetch_status: 'fetch_completed',
-                items: [...state.items, action.payload]
+                items: [...state.items, ...action.payload]
             });
         default:
             return state;

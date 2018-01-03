@@ -5,9 +5,9 @@ export let fetchCategories = () => {
         type: FETCH_CATEGORIES
     };
 };
-export let fetchCategoriesComplete = () => {
+export let fetchCategoriesComplete = (categories) => {
     return {
         type: FETCH_CATEGORIES_COMPLETED,
-        payload: ['category 1']
+        payload: categories
     };
 };
