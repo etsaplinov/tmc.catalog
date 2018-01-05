@@ -1,13 +1,13 @@
-import { FETCH_CATEGORIES, FETCH_CATEGORIES_COMPLETED } from '../actionTypes/categories';
+import { FETCH_CATEGORIES_REQUEST, FETCH_CATEGORIES_SUCCESS } from '../actionTypes/categories';
 
-export let fetchCategories = () => {
+export let fetchCategoriesRequest = () => {
     return {
-        type: FETCH_CATEGORIES
+        type: FETCH_CATEGORIES_REQUEST
     };
 };
-export let fetchCategoriesComplete = (categories) => {
+export let fetchCategoriesSuccess = (categories) => {
     return {
-        type: FETCH_CATEGORIES_COMPLETED,
+        type: FETCH_CATEGORIES_SUCCESS,
         payload: categories
     };
 };
